@@ -17,6 +17,27 @@ Ao executar, o ojAlgo pode exibir um aviso dizendo que nenhum perfil de hardware
 predefinido corresponde ao ambiente e que um perfil padrao foi escolhido. Essa
 mensagem e esperada e informativa; nao e um erro, e o programa pode continuar.
 
+Validacao dos dados do CSV:
+
+Antes de montar o modelo, o programa verifica o cabecalho, a quantidade de colunas,
+os valores numericos e se lucro, agua, horas de maquina e mao de obra sao iguais
+em todas as linhas da mesma cultura. A area maxima pode variar e e somada.
+Se encontrar dados inconsistentes, o programa para e informa a linha, a cultura
+e a coluna com divergencia. Por exemplo:
+
+   Linha 3: a coluna 'lucro_hectare' da cultura 'Feijao Corda' difere da linha 2 (2800.0 != 4000.0).
+
+Tabela consolidada esperada:
+
+
+TABELA CONSOLIDADA
+Milho Verde | linhas: 160 | lucro: 3200.0 | agua: 2600.0 | horas: 6.0 | mao de obra: 3.2 | area maxima: 160.0
+Tomate Industrial | linhas: 90 | lucro: 5400.0 | agua: 4200.0 | horas: 9.0 | mao de obra: 6.0 | area maxima: 90.0
+Melancia | linhas: 120 | lucro: 4100.0 | agua: 3100.0 | horas: 5.5 | mao de obra: 4.1 | area maxima: 120.0
+Feijao Corda | linhas: 150 | lucro: 2800.0 | agua: 1800.0 | horas: 4.5 | mao de obra: 2.7 | area maxima: 150.0
+Pimentao | linhas: 70 | lucro: 6200.0 | agua: 4600.0 | horas: 10.5 | mao de obra: 6.8 | area maxima: 70.0
+
+
 Valores que devem aparecer:
 
    Estado do solver: OPTIMAL
