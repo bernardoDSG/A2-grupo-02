@@ -19,6 +19,7 @@ public class Main {
         double horas;
         double maoObra;
         double areaMaxima;
+        double areaPorLinha;
         int linhas;
         int primeiraLinha;
     }
@@ -161,6 +162,7 @@ public class Main {
                 cultura.agua = agua;
                 cultura.horas = horas;
                 cultura.maoObra = maoObra;
+                cultura.areaPorLinha = areaMaxima;
                 cultura.primeiraLinha = numeroLinha;
                 culturas.add(cultura);
             } else {
@@ -168,6 +170,7 @@ public class Main {
                 validarConsistencia(cultura, "agua_m3", cultura.agua, agua, numeroLinha);
                 validarConsistencia(cultura, "horas_maquina", cultura.horas, horas, numeroLinha);
                 validarConsistencia(cultura, "mao_obra_dias", cultura.maoObra, maoObra, numeroLinha);
+                validarConsistencia(cultura, "area_maxima", cultura.areaPorLinha, areaMaxima, numeroLinha);
             }
 
             double areaAcumulada = cultura.areaMaxima + areaMaxima;

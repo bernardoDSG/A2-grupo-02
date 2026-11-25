@@ -20,12 +20,14 @@ mensagem e esperada e informativa; nao e um erro, e o programa pode continuar.
 Validacao dos dados do CSV:
 
 Antes de montar o modelo, o programa verifica o cabecalho, a quantidade de colunas,
-os valores numericos e se lucro, agua, horas de maquina e mao de obra sao iguais
-em todas as linhas da mesma cultura. A area maxima pode variar e e somada.
+os valores numericos e se lucro, agua, horas de maquina, mao de obra e area maxima
+sao iguais em todas as linhas da mesma cultura. O total de area maxima consolidado
+e calculado somando a area de cada linha.
 Se encontrar dados inconsistentes, o programa para e informa a linha, a cultura
 e a coluna com divergencia. Por exemplo:
 
    Linha 3: a coluna 'lucro_hectare' da cultura 'Feijao Corda' difere da linha 2 (2800.0 != 4000.0).
+   Linha 3: a coluna 'area_maxima' da cultura 'Feijao Corda' difere da linha 2 (1.0 != 2.0).
 
 Tabela consolidada esperada:
 
