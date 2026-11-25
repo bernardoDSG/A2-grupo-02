@@ -1,14 +1,17 @@
 COMO EXECUTAR
 
-1. Descompacte este zip em qualquer lugar.
-2. Abra o terminal dentro da pasta `projeto` (a que tem o `pom.xml`).
-   No VS Code, abra a pasta do projeto e execute `Main.java` pelo botao Run,
-   ou abra um terminal nessa pasta e rode os comandos abaixo.
-3. Digite:
+1. Precisa ter Java 25 ou mais novo e o Maven instalados. O programa foi feito para executar no Windows, portanto, devem haver em variaveis de ambiente JAVA_HOME com o valor sendo o path onde o jdk esta instalado. Exemplo: C:\Program Files\Java\jdk-25.0.4 
+Além disso, em Path deve haver o caminho para a pasta bin do jdk. Exemplo: C:\Program Files\Java\jdk-25.0.4\bin
+O mesmo deve ser feito para o Maven: deve haver a variável M2_HOME com o valor do path onde o apache maven esta instalado. Exemplo: C:\Users\berna_hkolb5r\Documents\maven\apache-maven-3.10.2 
+Além disso, em Path deve haver o caminho para a pasta bin do apache maven. Exemplo: C:\Users\berna_hkolb5r\Documents\maven\apache-maven-3.10.2\bin
+Para verificar se a configuração deu certo , abra o terminal em qualquer pasta e digite mvn -version e java -version. Devem aparecer os dados da versão do maven e do java.
+
+2. Se a configuração deu certo, descompacte este zip em qualquer lugar.
+3. Abra o terminal dentro da pasta `projeto` (a que tem o `pom.xml`).
+4. Digite:
 
       mvn compile exec:java
 
-Precisa ter Java 25 ou mais novo e o Maven instalados.
 
 O `dados-grupo-02.csv` ja esta incluido, montado a partir da tabela consolidada 2.2
 do relatorio do grupo.
