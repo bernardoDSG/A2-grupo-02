@@ -1,0 +1,15 @@
+# IDE configuration
+.vscode/
+**/.vscode/
+.idea/
+**/.idea/
+*.iml
+.project
+.classpath
+.settings/
+**/.settings/
+
+# Maven build output and compiled Java files
+**/target/
+*.class
+
